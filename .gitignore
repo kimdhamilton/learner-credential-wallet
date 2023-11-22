@@ -78,3 +78,8 @@ web-build/
 # @end expo-cli
 
 android/app/release/
+
+# Expo
+.expo
+dist/
+web-build/

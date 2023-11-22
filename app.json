@@ -1,8 +1,8 @@
 {
-  "displayName": "Learner Credential Wallet",
+  "displayName": "ASU Learner Credential Wallet",
   "expo": {
-    "name": "Learner Credential Wallet",
-    "slug": "Learner Credential Wallet",
+    "name": "ASU Learner Credential Wallet",
+    "slug": "ASU Learner Credential Wallet",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -20,14 +20,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "edu.wallet"
+      "bundleIdentifier": "edu.asu.wallet"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#1F2937"
       },
-      "package": "edu.wallet"
+      "package": "edu.asu.wallet"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
