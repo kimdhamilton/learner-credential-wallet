@@ -62,10 +62,21 @@ export async function verifyCredential(credential: Credential): Promise<VerifyRe
   const { issuer } = credential;
   const issuerDid = typeof issuer === 'string' ? issuer : issuer.id;
 
+  // TODO: kim
+  console.log('verifycredential returning no-opp for now');
+
+  return {
+    verified: true,
+    results: [  ]
+  };
+
+
   const isInRegistry = await registryCollections.issuerDid.isInRegistryCollection(issuerDid);
   if (!isInRegistry) {
     throw new Error(CredentialError.DidNotInRegistry);
   }
+
+
 
   try {
     const hasStatusProperty = extractCredentialsFrom(credential)?.find(vc => vc.credentialStatus);
